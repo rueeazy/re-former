@@ -1,0 +1,10 @@
+<%= render 'errors' %>
+<%= form_for @user do |f| %>
+    <%= f.label :username, "Your user name here:" %>
+    <%= f.text_field :username %><br>
+    <%= f.label :email, "Email:" %>
+    <%= f.text_field :email, placeholder: "example@example.com" %><br>
+    <%= f.label :password, "Password:" %>
+    <%= f.password_field :password %><br>
+    <%=f.submit "Submit" %>
+    <% end %>
